@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ce0902a.SNaPP.gogetme"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data
+    	android:name="com.google.android.gms.version"
+    	android:value="@integer/google_play_services_version" />
+        
+        <meta-data
+    		android:name="com.google.android.maps.v2.API_KEY"
+    		android:value="AIzaSyCaNfZRgAdtvumlZnd6omrLxtm54ZgP_uo"/>
+        
+        
+        <activity
+            android:name="ce0902a.SNaPP.gogetme.GoGetMeMain"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ce0902a.SNaPP.gogetme.GoGetMeAddLocation" android:label="Go Get Me Add Location"></activity>
+        <activity android:name="ce0902a.SNaPP.gogetme.GoGetMeDeleteLocation" android:label="Go Get Me Delete Location"></activity>
+        <activity android:name="ce0902a.SNaPP.gogetme.GoGetMeSetPassword" android:label="Go Get Me Set Password"></activity>
+        <activity android:name="ce0902a.SNaPP.gogetme.GoGetMeSelectImage" android:label="Go Get Me Select Image"></activity>
+        <activity android:name="ce0902a.SNaPP.gogetme.GoGetMeSelectThumb" android:label="Go Get Me Select Thumb"></activity>
+        <activity android:name="ce0902a.SNaPP.gogetme.GoGetMeCameraView" android:label="Go Get Me Camera View"></activity>
+        <activity android:name="ce0902a.SNaPP.gogetme.GoGetMeImageView" android:label="Go Get Me Image View"></activity>
+        <activity android:name="ce0902a.SNaPP.gogetme.GoGetMePickLocation" android:label="Go Get Me Pick Location"></activity>
+        <activity android:name="ce0902a.SNaPP.gogetme.GoGetMeDirections" android:label="Go Get Me Directions"></activity>
+        <activity android:name="ce0902a.SNaPP.gogetme.Register" android:label="Register"></activity>
+        <activity android:name="ce0902a.SNaPP.gogetme.CarerMain" android:label="Carer Main"></activity>
+        <activity android:name="ce0902a.SNaPP.gogetme.CarerRegister" android:label="Carer Register"></activity>
+        <activity android:name="ce0902a.SNaPP.gogetme.CarerLocation" android:label="Carer Location"></activity>
+        
+    </application>
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    
+</manifest>

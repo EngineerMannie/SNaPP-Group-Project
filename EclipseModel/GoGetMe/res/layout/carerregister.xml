@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+   	android:id="@+id/regroot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    	   
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+           
+            <TextView
+                android:id="@+id/textError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/btn_vert_margin"
+                android:gravity="center"
+                android:text=""
+                android:textSize="@dimen/medium_text"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+	    
+           <TextView
+               android:id="@+id/txtEnterYourName"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_margin="@dimen/btn_vert_margin"
+               android:text="@string/enterYourName"
+               android:textSize="@dimen/medium_text" />
+		
+		    <EditText
+		        android:id="@+id/textFirstName"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="@dimen/btn_horiz_margin"
+		        android:layout_marginRight="@dimen/btn_horiz_margin"
+		        android:hint="@string/firstName"
+		        android:maxLines="1" />
+	
+		    <EditText
+		        android:id="@+id/textLastName"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="@dimen/btn_horiz_margin"
+		        android:layout_marginRight="@dimen/btn_horiz_margin"
+		        android:hint="@string/lastName"
+		        android:maxLines="1" />
+		    
+		    <TextView
+               android:id="@+id/txtvEnterYourPhoneNo"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_margin="@dimen/btn_vert_margin"
+               android:text="@string/enterYourPhoneNo"
+               android:textSize="@dimen/medium_text" />
+		    
+		    <EditText
+		        android:id="@+id/textPhone"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="@dimen/btn_horiz_margin"
+		        android:layout_marginRight="@dimen/btn_horiz_margin"
+		        android:inputType="phone"
+		        android:hint="@string/myPhoneNumber"
+		        android:maxLines="1" />
+		    
+		    <EditText
+		        android:id="@+id/textLinkedPhone"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="@dimen/btn_horiz_margin"
+		        android:layout_marginRight="@dimen/btn_horiz_margin"
+		        android:hint="@string/linkedPhone"
+		        android:inputType="phone"
+		        android:maxLines="1" />
+		    
+		    <TextView
+		        android:id="@+id/txtvRegProblem"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_margin="@dimen/btn_vert_margin"
+		        android:gravity="center"
+		        android:textSize="@dimen/medium_text"
+		        android:hint="@string/msgRegisterPhone" />
+		
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="@dimen/btn_horiz_margin"
+		        android:paddingRight="@dimen/btn_horiz_margin" >
+		
+		        <Button
+		            android:id="@+id/buttonRegister"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1"
+		            android:onClick="callIntent"
+		            android:text="@string/registerPhone" />
+	            
+        	</LinearLayout>
+        
+		</LinearLayout>
+      
+</ScrollView>

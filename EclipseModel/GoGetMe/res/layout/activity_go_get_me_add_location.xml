@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:tools="http://schemas.android.com/tools"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:paddingBottom="@dimen/activity_vertical_margin"
+ android:paddingLeft="@dimen/activity_horizontal_margin"
+ android:paddingRight="@dimen/activity_horizontal_margin"
+ android:paddingTop="@dimen/activity_vertical_margin"
+ tools:context=".GoGetMeHome" >
+ <TextView
+ android:id="@+id/txtHeading"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text = "Add Location" 
+ android:layout_centerHorizontal="true"
+ android:textSize="40sp" 
+ />
+ 
+ <LinearLayout
+ android:paddingLeft="10dp"
+ android:paddingRight="10dp"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:layout_below="@+id/txtHeading"
+ android:orientation="vertical"
+ android:gravity="center"
+ >
+ <EditText
+ android:id="@+id/edtFirstLine"
+ android:layout_width="250dp"
+ android:layout_height="wrap_content" 
+ android:hint = "Enter 1st line of address"
+ />
+ <EditText
+ android:id="@+id/edtSecondLine"
+ android:layout_width="250dp"
+ android:layout_height="wrap_content"
+ android:hint = "Enter 2nd line of address" 
+ />
+ 
+ <EditText
+ android:id="@+id/edtTown"
+ android:layout_width="250dp"
+ android:layout_height="wrap_content"
+ android:hint = "Enter Town/City" 
+ />
+ 
+ <EditText
+ android:id="@+id/edtPostCode"
+ android:layout_width="250dp"
+ android:layout_height="wrap_content"
+ android:hint = "Enter Postcode" 
+ />
+ 
+ <EditText
+ android:id="@+id/edtTextDescription"
+ android:layout_width="250dp"
+ android:layout_height="wrap_content"
+ android:hint = "Enter Text Description" 
+ /> <Button 
+ android:id="@+id/btnTakePicture"
+ android:layout_width="150dp"
+ android:layout_height="wrap_content"
+ android:text = "Take Pitcure" 
+ /> 
+ 
+ <Button 
+ android:id="@+id/btnAddLocation"
+ android:layout_width="150dp"
+ android:layout_height="wrap_content"
+ android:text = "Add Location" 
+ />
+ 
+ <Button 
+ android:id="@+id/btnHelp"
+ android:layout_width="150dp"
+ android:layout_height="wrap_content"
+ android:text = "Help" 
+ />
+ 
+  <Button 
+ android:id="@+id/btnBack"
+ android:layout_width="150dp"
+ android:layout_height="48dp"
+ android:text = "Back" 
+ />
+</LinearLayout>
+</RelativeLayout>

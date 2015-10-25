@@ -1,0 +1,23 @@
+DROP TABLE member;
+
+
+
+CREATE TABLE member (
+
+	id INT(10) NOT NULL,
+
+	login VARCHAR(50) NOT NULL,
+
+	pass VARCHAR(50) NOT NULL,
+
+    	PRIMARY KEY (id)
+);
+
+
+
+INSERT INTO member (id, login, pass) VALUES
+('1', 'notgael', 'test123');
+
+
+
+SELECT * FROM member;
